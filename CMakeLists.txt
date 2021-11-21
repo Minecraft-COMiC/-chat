@@ -9,7 +9,7 @@ add_library(
         src/init.c
 )
 
-target_link_libraries(logger PUBLIC COMiC::os)
+target_link_libraries(logger PUBLIC COMiC::env)
 target_include_directories(logger PUBLIC include)
 set_target_properties(logger PROPERTIES LINKER_LANGUAGE C)
 
